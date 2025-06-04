@@ -1,0 +1,28 @@
+{
+  "name": "mailhook-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "html-to-text": "^9.0.5",
+    "postal-mime": "^2.4.3"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck": "tsc --noEmit",
+    "build": "wrangler build",
+    "release": "bumpp --commit --tag --push"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250303.0",
+    "@types/html-to-text": "^9.0.4",
+    "typescript": "^5.8.2",
+    "wrangler": "^4.19.1",
+    "bumpp": "^10.0.1"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0"
+}
