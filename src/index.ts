@@ -117,17 +117,17 @@ export default {
         if (!response.ok) {
           const errorText = await response.text();
           console.error(
-            `Discord webhook failed: ${response.status} ${response.statusText}`,
+            `n8n webhook failed: ${response.status} ${response.statusText}`,
             errorText,
           );
-          message.setReject("Discord webhook failed");
+          message.setReject("n8n webhook failed");
           return;
         }
 
-        console.log("Discord webhook sent successfully");
+        console.log("n8n webhook sent successfully");
       } catch (fetchError) {
-        console.error("Failed to send Discord webhook:", fetchError);
-        message.setReject("Failed to send Discord webhook");
+        console.error("Failed to send n8n webhook:", fetchError);
+        message.setReject("Failed to send n8n webhook");
         return;
       }
     } catch (error) {
