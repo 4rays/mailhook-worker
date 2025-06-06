@@ -18,6 +18,8 @@ worker.js.map
 .env.development.local
 .env.test.local
 .env.production.local
+.dev.vars
+.dev.vars.*
 
 # IDE/Editor files
 .vscode/

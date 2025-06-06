@@ -14,14 +14,14 @@
     "lint:fix": "eslint --fix .",
     "typecheck": "tsc --noEmit",
     "build": "wrangler build",
+    "cf-types": "wrangler types",
     "release": "bumpp --commit --tag --push"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250303.0",
     "@types/html-to-text": "^9.0.4",
+    "bumpp": "^10.0.1",
     "typescript": "^5.8.2",
-    "wrangler": "^4.19.1",
-    "bumpp": "^10.0.1"
+    "wrangler": "^4.19.1"
   },
   "license": "ISC",
   "packageManager": "pnpm@10.11.0"

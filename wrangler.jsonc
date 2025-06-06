@@ -1,0 +1,14 @@
+{
+  "name": "mailhook-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-22",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "send_email": [
+    {
+      "name": "EMAIL"
+    }
+  ]
+}
