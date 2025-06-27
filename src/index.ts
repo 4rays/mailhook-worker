@@ -53,7 +53,7 @@ const rewrite = async (email: string, env: any): Promise<string> => {
       },
       {
         role: "user",
-        content: `Translate this email to english if it's in a different language. Clean it up if it's English. Reply with the markdown only, no prefaces or disclaimers and no fenced code blocks. \n\n${email}`,
+        content: `Translate this email to english if it's in a different language. Clean it up if it's English. Reply with the markdown only, no prefaces or disclaimers and no fenced code blocks. Remove all links and images. \n\n${email}`,
       },
     ],
   };
